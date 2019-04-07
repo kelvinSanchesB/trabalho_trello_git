@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <title>Quiz geral</title>
+	<link rel="stylesheet" href="kanban2.css">
   </head>
-  <body style="background-color: grey">
+  <body style="background-color:grey;">
 	  <center>
 		<div id="fazer">
 			<input id="text1">
