@@ -6,18 +6,24 @@
 	<link rel="stylesheet" href="kanban2.css">
   </head>
   <body style="background-color:grey;">
-	  <center>
-		<div id="fazer">
-			<input id="text1">
-		
+	<center>
+		<div class="box">
+			<h1>A fazer</h1>
+			<div id="fazer">
+				<input id="text1">
+			</div>
 		</div>
-		<div id="fazendo">
-		
-		
+		<div class="box">
+			<h1>Fazerndo</h1>
+			<div id="fazendo">
+				<input id="text2">
+			</div>
 		</div>
-		<div id="feito">
-		
-		
+		<div class="box">
+			<h1>Feito</h1>
+			<div id="feito">
+				<input id="text3">
+			</div>
 		</div>
     </center>
   </body>
