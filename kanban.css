@@ -1,32 +1,33 @@
 .box{
 	float: left;
-	margin-top: 5%;
-	margin-left: 10%;
+	margin-left: 5%;
+	background-color:#ccc;
 }
 #fazer{
-	text-align:center;
+	
 	background-color:white;
 	border-width: 2px;
 	width:305px;
 	height: 205px;
-	padding-top: 20%;
-	padding-bottom: -40%;
+	padding: 50px;
 }
 #fazendo{
-	text-align:center;
 	background-color:white;
 	border-width: 2px;
 	width:305px;
 	height: 205px;
-	padding-top: 20%;
-	padding-bottom: -40%;
+	padding: 50px;
 }
 #feito{
-	text-align:center;
 	background-color:white;
 	border-width: 2px;
 	width:305px;
 	height: 205px;
-	padding-top: 20%;
-	padding-bottom: -40%;
+	padding: 50px;
+}
+#cadastro{
+	background-color:white;
+	text-align: center;
+	width: 200px;
+	margin-bottom:5%;
 }
