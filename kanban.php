@@ -18,9 +18,8 @@
 				(?,?,?,?)";
 				
 		$tabela12 = $meca -> prepare($sql2);
-		$tabela12 -> execute(array($id,$date1,$desc1,$tipo));
 		echo "<script>window.history.back()</script>";
-				
+		$tabela12 -> execute(array($id,$date1,$desc1,$tipo));
 	}
 	?>
 <html lang="pt-br">
@@ -131,7 +130,7 @@
 							echo "<tr>";
 							echo "<td>$id</td>";
 							echo "<td>".date("d/m/Y",strtotime($data1))."</td>";
-							echo "<td>".$data1."</td>";
+							echo "<td>".$desc2."</td>";
 							// echo "<td>".$desc2."</td>"
 							echo "<td>".$tipo."</td>";
 							echo "<td align=''>
@@ -187,7 +186,7 @@
 						echo "<tr>";
 							echo "<td>$id</td>";
 							echo "<td>".date("d/m/Y",strtotime($data1))."</td>";
-							echo "<td>".$data1."</td>";
+							echo "<td>".$desc2."</td>";
 							// echo "<td>".$desc2."</td>"
 							echo "<td>".$tipo."</td>";
 							echo "<td align=''>
@@ -242,7 +241,7 @@
 						echo "<tr>";
 							echo "<td>$id</td>";
 							echo "<td>".date("d/m/Y",strtotime($data1))."</td>";
-							echo "<td>".$data1."</td>";
+							echo "<td>".$desc2."</td>";
 							// echo "<td>".$desc2."</td>"
 							echo "<td>".$tipo."</td>";
 							echo "<td align=''>
@@ -250,8 +249,9 @@
 									<img src=''width='25px'>O
 								</a>
 							</td>;	
+							&nbsp;&nbsp;
 							<td align=''>
-								&nbsp;&nbsp;
+								
 								<a href='kanban_del.php?id=$id&descricao=$desc2' title='Execluir $desc2'>
 									<img src='' width='25px'>X
 								</a>
