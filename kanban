@@ -109,8 +109,10 @@
 						<th>descrição</th>
 						
 						<th>tipo</th>
+						
 						<th>editar</th>
-						<th>excluir</th>
+						
+						<th>deletar</th>
 					</tr>
 					<?php
 						include "conec_kanban.php";
@@ -129,20 +131,20 @@
 							echo "<tr>";
 							echo "<td>$id</td>";
 							echo "<td>".date("d/m/Y",strtotime($data1))."</td>";
-							echo "<td>".$desc2."</td>";
-							// echo "<td>".$data1."</td>"
+							echo "<td>".$data1."</td>";
+							// echo "<td>".$desc2."</td>"
 							echo "<td>".$tipo."</td>";
 							echo "<td align=''>
-						<a href='kanban_ed.php?id=$id&desc1=$desc1' title='Editar $id'>
-							<img src=''width='25px'>O
-						</a>
-						</td>";
-						echo "<td align=''>
-						<a href='#?id=$id' title='Execluir $id'>
-							<img src='' width='25px'>X
-						</a>
-						</td>";
-						echo "</tr>";
+								<a href='kanban_ed.php?id=$id' title='Editar $id'>
+									<img src=''width='25px'>O
+								</a>
+							</td>;	
+							<td align=''>
+								&nbsp;&nbsp;
+								<a href='kanban_del.php?id=$id&descricao=$desc2' title='Execluir $desc2'>
+									<img src='' width='25px'>X
+								</a>
+							</td>";
 							echo "</tr>";
 						}
 					}
@@ -163,8 +165,10 @@
 						<th>descrição</th>
 						
 						<th>tipo</th>
+						
 						<th>editar</th>
-						<th>excluir</th>
+						
+						<th>deletar</th>
 					</tr>
 					<?php
 						include "conec_kanban.php";
@@ -181,22 +185,23 @@
 						// mostrando os valores em uma tabela
 						if($tipo == '2'){
 						echo "<tr>";
-						echo "<td>$id</td>";
-						echo "<td>".date("d/m/Y",strtotime($data1))."</td>";
-						echo "<td>".$desc2."</td>";
-							// echo "<td>".$data1."</td>"
-						echo "<td>".$tipo."</td>";
-						echo "<td align=''>
-						<a href='#?id=$id' title='Editar $id'>
-							<img src=''width='25px'>O
-						</a>
-						</td>";
-						echo "<td align=''>
-						<a href='#?id=$id' title='Execluir $id'>
-							<img src='' width='25px'>X
-						</a>
-						</td>";
-						echo "</tr>";
+							echo "<td>$id</td>";
+							echo "<td>".date("d/m/Y",strtotime($data1))."</td>";
+							echo "<td>".$data1."</td>";
+							// echo "<td>".$desc2."</td>"
+							echo "<td>".$tipo."</td>";
+							echo "<td align=''>
+								<a href='kanban_ed.php?id=$id' title='Editar $id'>
+									<img src=''width='25px'>O
+								</a>
+							</td>;	
+							<td align=''>
+								&nbsp;&nbsp;
+								<a href='kanban_del.php?id=$id&descricao=$desc2' title='Execluir $desc2'>
+									<img src='' width='25px'>X
+								</a>
+							</td>";
+							echo "</tr>";
 						}
 					}
 					?>
@@ -215,8 +220,10 @@
 						<th>descrição</th>
 						
 						<th>tipo</th>
+						
 						<th>editar</th>
-						<th>excluir</th>
+						
+						<th>deletar</th>
 					</tr>
 					<?php
 						include "conec_kanban.php";
@@ -233,23 +240,23 @@
 						// mostrando os valores em uma tabela
 						if($tipo == '3'){
 						echo "<tr>";
-						echo "<td>$id</td>";
-						echo "<td>".date("d/m/Y",strtotime($data1))."</td>";
-						echo "<td>".$desc2."</td>";
-							// echo "<td>".$data1."</td>"
-						echo "<td>".$tipo."</td>";
-						echo "<td align=''>
-						<a href='#?id=$id' title='Editar $id'>
-							<img src=''width='25px'>O
-						</a>
-						</td>";
-						echo "<td align=''>
-						<a href='#?id=$id' title='Execluir $id'>
-							<img src='' width='25px'>X
-						</a>
-						</td>";
-						echo "</tr>";
-						echo "</tr>";
+							echo "<td>$id</td>";
+							echo "<td>".date("d/m/Y",strtotime($data1))."</td>";
+							echo "<td>".$data1."</td>";
+							// echo "<td>".$desc2."</td>"
+							echo "<td>".$tipo."</td>";
+							echo "<td align=''>
+								<a href='kanban_ed.php?id=$id' title='Editar $id'>
+									<img src=''width='25px'>O
+								</a>
+							</td>;	
+							<td align=''>
+								&nbsp;&nbsp;
+								<a href='kanban_del.php?id=$id&descricao=$desc2' title='Execluir $desc2'>
+									<img src='' width='25px'>X
+								</a>
+							</td>";
+							echo "</tr>";
 						}
 					}
 					?>
@@ -259,4 +266,3 @@
     </center>
   </body>
  </html>
-
